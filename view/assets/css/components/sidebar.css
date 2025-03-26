@@ -1,0 +1,26 @@
+aside {
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(136, 136, 235);
+  /* position: fixed;
+    left: 0; */
+  grid-column: 1;
+  grid-row: 1 / 4;
+
+  button {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  aside {
+    visibility: hidden;
+
+    button {
+      visibility: visible;
+      /* position: fixed;
+            left: 10px;
+            top: 13px; */
+    }
+  }
+}

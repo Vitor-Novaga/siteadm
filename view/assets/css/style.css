@@ -1,0 +1,16 @@
+@import url("/../site-adm-grid/view/assets/css/reset.css");
+@import url("/../site-adm-grid/view/assets/css/components/content.css");
+@import url("/../site-adm-grid/view/assets/css/components/footer.css");
+@import url("/../site-adm-grid/view/assets/css/components/navbar.css");
+@import url("/../site-adm-grid/view/assets/css/components/sidebar.css");
+@import url("/../site-adm-grid/view/assets/css/components/categoria.css");
+
+body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 68px 1fr 22px;
+}
+
+p {
+  margin: 20px 0;
+}
