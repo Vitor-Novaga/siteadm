@@ -1,7 +1,7 @@
 .content {
-    margin-left: 220px; /* Dá espaço para a sidebar */
-    padding: 20px; /* Define espaçamento interno */
-    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
-    background-color: #f9f9f9; /* Define um fundo claro */
-    border-left: 1px solid #ccc; /* Linha de separação com a sidebar */
+    margin-left: 220px; 
+    padding: 20px; 
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f9f9f9; 
+    border-left: 1px solid #ccc; 
 }
