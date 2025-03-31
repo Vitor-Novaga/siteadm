@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    position: fixed;
+    height: 100%;
+    display: flex; /* Flexbox para centralizar os itens */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens no eixo vertical */
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+    border-right: 1px solid #ccc;
+}
+.sidebar h3 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+.sidebar a {
+    display: inline-block;
+    margin: 10px 0; /* Espaçamento vertical entre os links */
+    color: #333;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
