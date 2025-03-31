@@ -10,18 +10,18 @@ body {
     background-color: #f4f4f4;
     position: fixed;
     height: 100%;
-    display: flex; /* Flexbox para centralizar os itens */
-    flex-direction: column; /* Organiza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens no eixo vertical */
-    align-items: center; /* Centraliza os itens no eixo horizontal */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     border-right: 1px solid #ccc;
 }
 .sidebar h3 {
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px; 
 }
 .sidebar a {
     display: inline-block;
-    margin: 10px 0; /* Espaçamento vertical entre os links */
+    margin: 10px 0; 
     color: #333;
     text-decoration: none;
 }
