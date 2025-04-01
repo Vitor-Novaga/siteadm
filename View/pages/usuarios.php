@@ -13,6 +13,8 @@
 <body>
     <?php include '../components/navbar.php'; ?>
     <?php include '../components/sidebar.php'; ?>
+    <?php include 'config.php'; ?>
+
 
     <div class="content" style="margin-left: 220px; padding: 20px;">
         <h1>Usuários</h1>
