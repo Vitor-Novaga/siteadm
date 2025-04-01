@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="../assets/css/content.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
@@ -15,11 +12,10 @@
 <body>
     <?php include '../components/navbar.php'; ?>
     <?php include '../components/sidebar.php'; ?>
-    <?php include 'config.php'; ?>
 
-
-    <div class="content" style="margin-left: 220px; padding: 20px;">
+    <div class="content">
         <h1>Página inicial</h1>
+
     </div>
 
     <?php include '../components/footer.php'; ?>
