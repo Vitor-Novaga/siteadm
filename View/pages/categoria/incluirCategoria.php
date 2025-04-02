@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
-    <?php include '../components/navbar.php'; ?>
-    <?php include '../components/sidebar.php'; ?>
+    <?php require_once __DIR__ . '/../../components/navbar.php'; ?>
+    <?php require_once __DIR__ . '/../../components/sidebar.php'; ?>
 
-    <div class="content" style="margin-left: 220px; padding: 20px;">
+    <div class="content">
         <h1>Incluir Categoria</h1>
         <form method="post">
             <label for="nome">Nome da Categoria:</label>
             <input type="text" id="nome" name="nome" required><br>
-            <input type="submit" name="incluir" value="Incluir">
+            <input type="submit" name="incluir" value="Incluir" class="btn-incluir">
         </form>
 
         <?php
+        // Incluir o código PHP dentro de uma tag PHP
         if (isset($_POST['incluir'])) {
-            include '../config.php';
+            require_once __DIR__ . '/../../config.php';
 
             $nome = $_POST['nome'];
 
@@ -47,6 +48,6 @@
         ?>
     </div>
 
-    <?php include '../components/footer.php'; ?>
+    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
 </body>
 </html>

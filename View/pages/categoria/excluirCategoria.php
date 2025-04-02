@@ -1,10 +1,9 @@
 <?php
-include '../config.php';
+require_once __DIR__ . '/../../config.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Verifica se a conexão com o banco de dados está estabelecida
     if ($conn) {
         $stmt = $conn->prepare("DELETE FROM categoria WHERE id = ?");
         $stmt->bind_param("i", $id);
@@ -20,8 +19,11 @@ if (isset($_GET['id'])) {
     } else {
         echo "Erro na conexão com o banco de dados.";
     }
-}
 
-header("Location: categorias.php");
-exit();
+    // Redireciona após a execução
+    header("Location: categories.php");
+    exit();
+} else {
+    echo "ID não fornecido.";
+}
 ?>

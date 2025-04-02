@@ -1,0 +1,43 @@
+@import url('components/content.css');
+@import url('components/navbar.css');
+@import url('components/sidebar.css');
+@import url('components/footer.css');
+@import url('reset.css');
+
+.btn-adicionar {
+    background-color: #5e6a5f; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 10px 25px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição inline */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 12px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.btn-adicionar:hover {
+    background-color: #262c26; /* Cor de fundo ao passar o mouse */
+}
+
+.btn-incluir {
+    background-color: #5e6a5f; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 10px 25px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição inline */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 30px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 12px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.btn-incluir:hover {
+    background-color: #262c26; /* Cor de fundo ao passar o mouse */
+}

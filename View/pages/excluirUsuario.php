@@ -16,7 +16,7 @@
     <?php include '../components/footer.php'; ?>
 
 
-    <div class="content" style="margin-left: 220px; padding: 20px;">
+    <div class="content">
         <h1>Excluir Usuário</h1>
         <form method="post">
             <label for="id">ID do Usuário:</label>
