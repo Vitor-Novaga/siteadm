@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
             // Exibe a mensagem de sucesso para depuração
             var_dump("Categoria excluída com sucesso!");
 
-            // Redireciona para categories.php usando caminho relativo
+            // Redireciona para categories.php com sucesso
             header("Location: categories.php?sucesso=1");
             exit();
         } else {

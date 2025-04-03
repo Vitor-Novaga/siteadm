@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
-
-    <?php require_once __DIR__ . '/../components/navbar.php'; ?>
-    <?php require_once __DIR__ . '/../components/sidebar.php'; ?>
-
+    <?php include '../components/navbar.php'; ?>
+    <?php include '../components/sidebar.php'; ?>
 
     <div class="content">
         <h1>Página inicial</h1>
+
     </div>
 
-    <?php require_once __DIR__ . '/../components/footer.php'; ?>
+    <?php include '../components/footer.php'; ?>
 </body>
 </html>

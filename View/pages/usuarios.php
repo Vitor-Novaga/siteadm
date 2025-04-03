@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
 </head>
 <body>
-    <?php require_once __DIR__ . '/../../components/navbar.php'; ?>
-    <?php require_once __DIR__ . '/../../components/sidebar.php'; ?>
+    <?php include '../components/navbar.php'; ?>
+    <?php include '../components/sidebar.php'; ?>
 
     <div class="content" style="margin-left: 220px; padding: 20px;">
         <h1>Usuários</h1>
@@ -20,7 +20,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Email</th> <!-- Corrigido a tag <th> do Email -->
+                    <th>Email</th>
                     <th>Data de Nascimento</th>
                     <th>CPF</th>
                     <th>Telefone</th>
@@ -28,7 +28,7 @@
             </thead>
             <tbody>
                 <?php
-                require_once __DIR__ . '/../../config.php';
+                include '../config.php';
                 
                 $sql = "SELECT * FROM usuario";
                 $result = $conn->query($sql);
@@ -46,6 +46,6 @@
         </table>
     </div>
 
-    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
+    <?php include '../components/footer.php'; ?>
 </body>
 </html>

@@ -8,21 +8,15 @@
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <script>
-        function excluirCategoria(id) {
-            if (confirm('Tem certeza que deseja excluir esta categoria?')) {
-                window.location.href = 'excluirCategoria.php?id=' + id;
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <?php require_once __DIR__ . '/../../components/navbar.php'; ?>
-    <?php require_once __DIR__ . '/../../components/sidebar.php'; ?>
+    <?php include '../components/navbar.php'; ?>
+    <?php include '../components/sidebar.php'; ?>
 
     <div class="content" style="margin-left: 220px; padding: 20px;">
         <h1>Categorias</h1>
-        <button class="btn-adicionar" onclick="window.location.href='incluirCategoria.php'">Incluir Categoria</button>
+        <button onclick="window.location.href='incluirCategoria.php'">Incluir Categoria</button>
         <table>
             <thead>
                 <tr>
@@ -33,7 +27,7 @@
             </thead>
             <tbody>
                 <?php
-                require_once __DIR__ . '/../../config.php';
+                include '../config.php';
                 
                 $sql = "SELECT * FROM categoria";
                 $result = $conn->query($sql);
@@ -50,6 +44,14 @@
         </table>
     </div>
 
-    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
+    <script>
+        function excluirCategoria(id) {
+            if (confirm('Tem certeza que deseja excluir esta categoria?')) {
+                window.location.href = 'excluirCategoria.php?id=' + id;
+            }
+        }
+    </script>
+
+    <?php include '../components/footer.php'; ?>
 </body>
 </html>
